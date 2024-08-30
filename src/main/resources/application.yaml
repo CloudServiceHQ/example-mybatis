@@ -1,3 +1,8 @@
 spring:
   application:
     name: demo
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/example?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: gksqja2@
