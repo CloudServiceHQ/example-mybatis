@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+<div>
+    <tr th:each="list : ${todoList}">
+        <td th:text="${list.id}"></td>
+        <td>
+            <span th:text="${list.contents}"></span>
+            <span th:text="${list.createdDate}"></span>
+            <span th:text="${list.updatedDate}"></span>
+        </td>
+    </tr>
+</div>
+</body>
+</html>
